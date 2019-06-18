@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./animals.css";
+import animalStyles from "./animal.scss";
 
 class Animals extends Component {
   constructor() {
@@ -20,7 +20,7 @@ class Animals extends Component {
   render() {
     return (
       <div>
-        <h1>Animals</h1>
+        <h1 className={animalStyles.title}>Animals</h1>
         <ul>
           {this.state.animals.map(animal => (
             <li key={animal.id}>{animal.type}</li>
