@@ -20,12 +20,16 @@ class Animals extends Component {
   render() {
     return (
       <div>
-        <h1 className={animalStyles.title}>Animals</h1>
-        <ul>
+        <h1 className={animalStyles.title}>Species</h1>
+        <ol className={animalStyles.container}>
           {this.state.animals.map(animal => (
-            <li key={animal.id}>{animal.type}</li>
+            <li className={animalStyles.flexbox} key={animal.id}>
+              <h2 className={animalStyles.type}>{animal.type}</h2>
+              {/* <p>{animal.description}</p>
+              <p>{animal.conservation_status}</p> */}
+            </li>
           ))}
-        </ul>
+        </ol>
       </div>
     );
   }

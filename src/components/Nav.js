@@ -10,21 +10,11 @@ const Header = () => {
           <li>
             <img alt="nav" className={navStyles.image} src="./nav.png" />
             <ul>
-              <li>
-                <a to="/">Animals</a>
-              </li>
-              <li>
-                <a to="/">Events </a>
-              </li>
-              <li>
-                <a to="/">News </a>
-              </li>
-              <li>
-                <a to="/">Contact </a>
-              </li>
-              <li>
-                <a to="/">Home &nbsp; &nbsp; </a>
-              </li>
+              <li>Animals</li>
+              <li>Events</li>
+              <li>News</li>
+              <li>Contact</li>
+              <li>Home &nbsp; &nbsp;</li>
             </ul>
           </li>
         </ul>
