@@ -15,7 +15,7 @@ class Home extends Component {
         <div>
           <ol className={homeStyles.container}>
             <li className={homeStyles.flexbox}>
-              <h2>Animals</h2>
+              <h2>Species</h2>
             </li>
             <li className={homeStyles.flexbox}>
               <h2>News</h2>
