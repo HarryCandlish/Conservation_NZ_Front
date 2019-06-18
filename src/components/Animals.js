@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import animalStyles from "./animal.scss";
+import animalStyles from "./animals.module.scss";
 
 class Animals extends Component {
   constructor() {
