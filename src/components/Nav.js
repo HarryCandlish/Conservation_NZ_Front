@@ -11,16 +11,16 @@ const Header = () => {
             <img alt="nav" className={navStyles.image} src="./nav.png" />
             <ul>
               <li>
-                <a to="/animals">Animals</a>
+                <a to="/">Animals</a>
               </li>
               <li>
-                <a to="/events">Events </a>
+                <a to="/">Events </a>
               </li>
               <li>
-                <a to="/news">News </a>
+                <a to="/">News </a>
               </li>
               <li>
-                <a to="/contact">Contact </a>
+                <a to="/">Contact </a>
               </li>
               <li>
                 <a to="/">Home &nbsp; &nbsp; </a>
