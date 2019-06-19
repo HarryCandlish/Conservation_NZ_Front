@@ -1,37 +1,73 @@
 import React, { Component } from "react";
 import homeStyles from "./home.module.scss";
 
+import Chart from "./Chart";
+
 class Home extends Component {
   constructor() {
     super();
     this.state = {
-      stats: []
+      chartData: {}
     };
   }
 
-  componentDidMount() {
-    fetch("/api/stats")
-      .then(res => res.json())
-      .then(stats => this.setState({ stats }, () => console.log("stats")));
+  componentWillMount() {
+    this.getChartData();
   }
+
+  getChartData() {
+    this.setState({
+      chartData: {
+        labels: ["1985", "1995", "2005", "2010", "2019"],
+        datasets: [
+          {
+            label: "Depression",
+            data: [100, 157, 209, 250, 308],
+            backgroundColor: "#c38d9e",
+            pointBorderColor: "black",
+            fill: false,
+            borderColor: "#c38d9e"
+          },
+          {
+            label: "Anxiety",
+            data: [94, 123, 270, 309, 350],
+            backgroundColor: "#e8a87c",
+            fill: false,
+            borderColor: "#e8a87c",
+            pointBorderColor: "black"
+          },
+          {
+            label: "Addiction",
+            data: [80, 130, 201, 247, 304],
+            backgroundColor: "#41b3a3",
+            fill: false,
+            borderColor: "#41b3a3",
+            pointBorderColor: "black"
+          }
+        ]
+      }
+    });
+  }
+
+  // componentDidMount() {
+  //   fetch("/api/stats")
+  //     .then(res => res.json())
+  //     .then(stats => this.setState({ stats }, () => console.log("stats")));
+  // }
+
   render() {
     return (
       <div>
         <h1 className={homeStyles.title}>
-          Wellington Environmental Association
+          Wellington Mental Health Association
         </h1>
         <p className={homeStyles.epigraph}>
-          an open source website cultivating awareness for protecting our local
-          environment and the species within it
+          An attempt to fight and establish a base in Wellington to deal with
+          the mental health issues in Wellington and New Zealand
         </p>
         <div>
-          <ol className={homeStyles.container}>
-            {this.state.stats.map(stat => (
-              <li className={homeStyles.flexbox} key={stat.id}>
-                <h2 className={homeStyles.type}>{stat.type}</h2>
-              </li>
-            ))}
-          </ol>
+          <h2 className={homeStyles.secondaryTitle}>The Problem</h2>
+          <Chart chartData={this.state.chartData} />
         </div>
       </div>
     );
