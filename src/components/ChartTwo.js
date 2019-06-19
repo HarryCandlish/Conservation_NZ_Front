@@ -11,8 +11,16 @@ class ChartTwo extends Component {
         labels: ["1985", "1995", "2005", "2010", "2019"],
         datasets: [
           {
-            label: "Suicide",
+            label: "Youth Suicide",
             data: [100, 157, 209, 250, 308],
+            backgroundColor: "#05386b",
+            pointBorderColor: "black",
+            fill: false,
+            borderColor: "#05386b"
+          },
+          {
+            label: "Adult Suicide",
+            data: [45, 120, 140, 200, 262],
             backgroundColor: "#5cdb96",
             pointBorderColor: "black",
             fill: false,
