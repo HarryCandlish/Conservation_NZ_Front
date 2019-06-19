@@ -7,15 +7,65 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      stats: []
+      chartData: {}
     };
   }
 
-  componentDidMount() {
-    fetch("/api/stats")
-      .then(res => res.json())
-      .then(stats => this.setState({ stats }, () => console.log("stats")));
+  componentWillMount() {
+    this.getChartData();
   }
+
+  getChartData() {
+    this.setState({
+      chartData: {
+        labels: ["1985", "1995", "2005", "2010", "2019"],
+        datasets: [
+          {
+            label: "Depression",
+            data: [100, 157, 209, 250, 308],
+            backgroundColor: "#c38d9e",
+            pointBorderColor: "black",
+            fill: false,
+            borderColor: "#c38d9e"
+          },
+          {
+            label: "Anxiety",
+            data: [94, 123, 270, 309, 350],
+            backgroundColor: "#e8a87c",
+            fill: false,
+            borderColor: "#e8a87c",
+            pointBorderColor: "black"
+          },
+          {
+            label: "Addiction",
+            data: [80, 130, 201, 247, 304],
+            backgroundColor: "#41b3a3",
+            fill: false,
+            borderColor: "#41b3a3",
+            pointBorderColor: "black"
+          }
+        ]
+      },
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true
+              }
+            }
+          ]
+        }
+      }
+    });
+  }
+
+  // componentDidMount() {
+  //   fetch("/api/stats")
+  //     .then(res => res.json())
+  //     .then(stats => this.setState({ stats }, () => console.log("stats")));
+  // }
+
   render() {
     return (
       <div>
@@ -28,14 +78,7 @@ class Home extends Component {
         </p>
         <div>
           <h2 className={homeStyles.secondaryTitle}>The Problem</h2>
-          <ol className={homeStyles.container}>
-            {this.state.stats.map(stat => (
-              <li className={homeStyles.flexbox} key={stat.id}>
-                <h2 className={homeStyles.type}>{stat.type}</h2>
-                <Chart />
-              </li>
-            ))}
-          </ol>
+          <Chart chartData={this.state.chartData} />
         </div>
       </div>
     );

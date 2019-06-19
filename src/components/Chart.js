@@ -1,25 +1,19 @@
 import React, { Component } from "react";
 import { Line } from "react-chartjs-2";
 
+import chartStyles from "./chart.module.scss";
+
 class Chart extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      chartData: {
-        labels: ["Anxiety", "Depression", "Addiction"],
-        datasets: [
-          {
-            label: "Cases",
-            data: [300, 200, 100],
-            backgroundColor: ["#e8a87c"]
-          }
-        ]
-      }
+      chartData: props.chartData
     };
   }
+
   render() {
     return (
-      <div className="chart">
+      <div className={chartStyles.chart}>
         <Line
           data={this.state.chartData}
           options={{
