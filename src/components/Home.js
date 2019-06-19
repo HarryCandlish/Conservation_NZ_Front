@@ -3,6 +3,7 @@ import homeStyles from "./home.module.scss";
 
 import Chart from "./Chart";
 import ChartTwo from "./ChartTwo";
+import EventsList from "./EventsList";
 
 class Home extends Component {
   constructor() {
@@ -50,12 +51,6 @@ class Home extends Component {
     });
   }
 
-  // componentDidMount() {
-  //   fetch("/api/stats")
-  //     .then(res => res.json())
-  //     .then(stats => this.setState({ stats }, () => console.log("stats")));
-  // }
-
   render() {
     return (
       <div>
@@ -72,6 +67,9 @@ class Home extends Component {
         </div>
         <div>
           <ChartTwo />
+        </div>
+        <div>
+          <EventsList />
         </div>
       </div>
     );
