@@ -3,6 +3,7 @@ import homeStyles from "./home.module.scss";
 
 import Chart from "./Chart";
 import ChartTwo from "./ChartTwo";
+import SampleProducts from "./SampleProducts";
 
 class Home extends Component {
   constructor() {
@@ -50,18 +51,11 @@ class Home extends Component {
     });
   }
 
-  // componentDidMount() {
-  //   fetch("/api/stats")
-  //     .then(res => res.json())
-  //     .then(stats => this.setState({ stats }, () => console.log("stats")));
-  // }
-
   render() {
     return (
       <div>
-        <h1 className={homeStyles.title}>
-          Wellington Mental Health Association
-        </h1>
+        <h1 className={homeStyles.title}>i-is</h1>
+
         <p className={homeStyles.epigraph}>
           An attempt to fight and establish a base in Wellington to deal with
           the mental health issues in Wellington and New Zealand
@@ -72,6 +66,9 @@ class Home extends Component {
         </div>
         <div>
           <ChartTwo />
+        </div>
+        <div>
+          <SampleProducts />
         </div>
       </div>
     );

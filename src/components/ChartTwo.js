@@ -4,8 +4,9 @@ import { Line } from "react-chartjs-2";
 import chartTwoStyles from "./chartTwo.module.scss";
 
 class ChartTwo extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
+
     this.state = {
       chartTwoData: {
         labels: ["1985", "1995", "2005", "2010", "2019"],
@@ -27,6 +28,17 @@ class ChartTwo extends Component {
             borderColor: "#5cdb96"
           }
         ]
+      },
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true
+              }
+            }
+          ]
+        }
       }
     };
   }
