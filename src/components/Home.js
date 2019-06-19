@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import homeStyles from "./home.module.scss";
 
 import Chart from "./Chart";
+import ChartTwo from "./ChartTwo";
 
 class Home extends Component {
   constructor() {
@@ -68,6 +69,9 @@ class Home extends Component {
         <div>
           <h2 className={homeStyles.secondaryTitle}>The Problem</h2>
           <Chart chartData={this.state.chartData} />
+        </div>
+        <div>
+          <ChartTwo />
         </div>
       </div>
     );
