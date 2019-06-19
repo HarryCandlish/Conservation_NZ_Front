@@ -2,6 +2,18 @@ import React, { Component } from "react";
 import homeStyles from "./home.module.scss";
 
 class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      stats: []
+    };
+  }
+
+  componentDidMount() {
+    fetch("/api/stats")
+      .then(res => res.json())
+      .then(stats => this.setState({ stats }, () => console.log("stats")));
+  }
   render() {
     return (
       <div>
@@ -14,15 +26,11 @@ class Home extends Component {
         </p>
         <div>
           <ol className={homeStyles.container}>
-            <li className={homeStyles.flexbox}>
-              <h2>Species</h2>
-            </li>
-            <li className={homeStyles.flexbox}>
-              <h2>News</h2>
-            </li>
-            <li className={homeStyles.flexbox}>
-              <h2>Events</h2>
-            </li>
+            {this.state.stats.map(stat => (
+              <li className={homeStyles.flexbox} key={stat.id}>
+                <h2 className={homeStyles.type}>{stat.type}</h2>
+              </li>
+            ))}
           </ol>
         </div>
       </div>

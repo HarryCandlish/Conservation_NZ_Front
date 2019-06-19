@@ -10,7 +10,7 @@ const Header = () => {
           <li>
             <img alt="nav" className={navStyles.image} src="./nav.png" />
             <ul>
-              <li>Animals</li>
+              <li>Stats</li>
               <li>Events</li>
               <li>News</li>
               <li>Contact</li>
