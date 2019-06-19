@@ -55,13 +55,14 @@ class Home extends Component {
     return (
       <div>
         <h1 className={homeStyles.title}>i-is</h1>
-
-        <p className={homeStyles.epigraph}>
-          An attempt to fight and establish a base in Wellington to deal with
-          the mental health issues in Wellington and New Zealand
-        </p>
-        <div>
+        <div className={homeStyles.banner}>
           <h2 className={homeStyles.secondaryTitle}>The Problem</h2>
+          <p className={homeStyles.epigraph}>
+            An attempt to fight and establish a base in Wellington to deal with
+            the mental health issues in Wellington and New Zealand
+          </p>
+        </div>
+        <div>
           <Chart chartData={this.state.chartData} />
         </div>
         <div>

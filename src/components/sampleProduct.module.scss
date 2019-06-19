@@ -8,6 +8,7 @@
   text-align: center;
   font-size: 35px;
   color: black;
+  padding-top: 8%;
 }
 
 a:link {
@@ -15,7 +16,7 @@ a:link {
 }
 
 .secondTitle:hover {
-  color: #3eb650;
+  color: #8ee4af;
 }
 
 .epigraph {
@@ -44,6 +45,7 @@ a:link {
   margin: 5px;
   height: 200px;
   text-align: center;
+  border: 1px lightgray solid;
 }
 
 .list {
@@ -53,9 +55,8 @@ a:link {
 }
 
 .list:hover {
-  border: 1px lightgray solid;
   .type {
-    color: #3eb650;
+    color: #8ee4af;
   }
 }
 
@@ -63,4 +64,15 @@ a:link {
 p {
   font-size: 17px;
   text-decoration-style: dashed;
+}
+
+.slogan {
+  font-style: italic;
+}
+
+.banner {
+  width: 100%;
+  background-color: #8ee4af;
+  position: relative;
+  top: 50px;
 }

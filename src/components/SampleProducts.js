@@ -20,10 +20,12 @@ class SampleProduct extends Component {
   render() {
     return (
       <div>
-        <h2 className={sampleProductStyles.title}>Our Mission</h2>
-        <p className={sampleProductStyles.epigraph}>
-          To provide and spread awareness in the community
-        </p>
+        <div className={sampleProductStyles.banner}>
+          <h2 className={sampleProductStyles.title}>Our Mission</h2>
+          <p className={sampleProductStyles.epigraph}>
+            To provide and spread awareness in the community
+          </p>
+        </div>
         <a href="/">
           <h2 className={sampleProductStyles.secondTitle}>The Store</h2>
         </a>
@@ -33,7 +35,7 @@ class SampleProduct extends Component {
               {" "}
               <li className={sampleProductStyles.list} key={tshirt.id}>
                 <h2 className={sampleProductStyles.type}>{tshirt.type}</h2>
-                <p>{tshirt.slogan}</p>
+                <h4 className={sampleProductStyles.slogan}>{tshirt.slogan}</h4>
                 <p>{tshirt.price}</p>
                 <p>Sizes : {tshirt.size}</p>
               </li>
