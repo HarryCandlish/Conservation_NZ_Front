@@ -1,22 +1,22 @@
 .title {
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
   padding-top: 5%;
+  color: #3eb650;
+  text-transform: uppercase;
 }
 
 .secondTitle {
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
   color: black;
-  padding-top: 8%;
+  padding-top: 5%;
+  text-transform: uppercase;
+  color: #3eb650;
 }
 
 a:link {
   text-decoration: none;
-}
-
-.secondTitle:hover {
-  color: #8ee4af;
 }
 
 .epigraph {
@@ -43,7 +43,7 @@ a:link {
   width: 25%;
   border-radius: 1%;
   margin: 5px;
-  height: 200px;
+  height: 250px;
   text-align: center;
   border: 1px lightgray solid;
 }
@@ -56,7 +56,7 @@ a:link {
 
 .list:hover {
   .type {
-    color: #8ee4af;
+    color: #3eb650;
   }
 }
 
@@ -68,11 +68,4 @@ p {
 
 .slogan {
   font-style: italic;
-}
-
-.banner {
-  width: 100%;
-  background-color: #8ee4af;
-  position: relative;
-  top: 50px;
 }

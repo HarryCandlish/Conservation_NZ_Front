@@ -2,11 +2,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.title {
-  text-align: center;
-  font-size: 70px;
-  padding-top: 8%;
-  padding-bottom: 8%;
+.logo {
+  width: 25%;
+  position: relative;
+  left: 37.5%;
+  top: 50px;
 }
 
 .epigraph {
@@ -20,11 +20,14 @@
 
 .secondaryTitle {
   text-align: center;
-  font-size: 35px;
-  padding-top: 5%;
+  font-size: 25px;
+  padding-top: 100px;
+  color: #3eb650;
+  text-transform: uppercase;
 }
 
-.banner {
-  width: 100%;
-  background-color: #8ee4af;
+hr {
+  position: relative;
+  top: 90px;
+  width: 75%;
 }

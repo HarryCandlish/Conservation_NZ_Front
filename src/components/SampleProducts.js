@@ -36,8 +36,10 @@ class SampleProduct extends Component {
               <li className={sampleProductStyles.list} key={tshirt.id}>
                 <h2 className={sampleProductStyles.type}>{tshirt.type}</h2>
                 <h4 className={sampleProductStyles.slogan}>{tshirt.slogan}</h4>
+                <p>{tshirt.color}</p>
                 <p>{tshirt.price}</p>
-                <p>Sizes : {tshirt.size}</p>
+
+                <button>Add</button>
               </li>
             </a>
           ))}
