@@ -13,20 +13,23 @@ class Chart extends Component {
 
   render() {
     return (
-      <div className={chartStyles.chart}>
-        <Line
-          data={this.state.chartData}
-          options={{
-            title: {
-              display: true,
-              text: "Mental Health"
-            },
-            legend: {
-              diplay: true,
-              position: "bottom"
-            }
-          }}
-        />
+      <div>
+        <div className={chartStyles.chart}>
+          <Line
+            data={this.state.chartData}
+            options={{
+              title: {
+                display: true,
+                text: "Mental Health",
+                fontSize: "20"
+              },
+              legend: {
+                diplay: true,
+                position: "bottom"
+              }
+            }}
+          />
+        </div>
       </div>
     );
   }
