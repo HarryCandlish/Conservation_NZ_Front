@@ -45,17 +45,6 @@ class Home extends Component {
             pointBorderColor: "black"
           }
         ]
-      },
-      options: {
-        scales: {
-          yAxes: [
-            {
-              ticks: {
-                beginAtZero: true
-              }
-            }
-          ]
-        }
       }
     });
   }
