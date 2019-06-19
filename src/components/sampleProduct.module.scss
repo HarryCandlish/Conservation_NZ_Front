@@ -42,6 +42,25 @@ a:link {
   width: 25%;
   border-radius: 1%;
   margin: 5px;
-  height: 300px;
+  height: 200px;
   text-align: center;
+}
+
+.list {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.list:hover {
+  border: 1px lightgray solid;
+  .type {
+    color: #3eb650;
+  }
+}
+
+.list,
+p {
+  font-size: 17px;
+  text-decoration-style: dashed;
 }

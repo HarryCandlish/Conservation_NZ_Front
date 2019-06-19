@@ -29,11 +29,15 @@ class SampleProduct extends Component {
         </a>
         <ol className={sampleProductStyles.container}>
           {this.state.tshirts.map(tshirt => (
-            <li className={sampleProductStyles.flexbox} key={tshirt.id}>
-              <h2>{tshirt.type}</h2>
-              <p>{tshirt.slogan}</p>
-              <p>{tshirt.price}</p>
-            </li>
+            <a className={sampleProductStyles.flexbox} href="/">
+              {" "}
+              <li className={sampleProductStyles.list} key={tshirt.id}>
+                <h2 className={sampleProductStyles.type}>{tshirt.type}</h2>
+                <p>{tshirt.slogan}</p>
+                <p>{tshirt.price}</p>
+                <p>Sizes : {tshirt.size}</p>
+              </li>
+            </a>
           ))}
         </ol>
       </div>
