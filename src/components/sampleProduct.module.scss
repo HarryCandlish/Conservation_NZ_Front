@@ -1,7 +1,21 @@
 .title {
   text-align: center;
   font-size: 35px;
-  padding-top: 3%;
+  padding-top: 5%;
+}
+
+.secondTitle {
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.secondTitle:hover {
+  color: #3eb650;
 }
 
 .epigraph {
@@ -30,5 +44,4 @@
   margin: 5px;
   height: 300px;
   text-align: center;
-  border: 1px black solid;
 }
