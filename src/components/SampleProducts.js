@@ -9,14 +9,18 @@ class SampleProduct extends Component {
       products: []
     };
   }
-
   componentDidMount() {
-    fetch("/api/v1/products")
+    fetch("/api/products")
       .then(res => res.json())
       .then(products =>
         this.setState({ products }, () => console.log("products"))
       );
   }
+
+  handleClick = id => {
+    this.state.getProduct(id);
+  };
+
   render() {
     return (
       <div>
@@ -31,19 +35,22 @@ class SampleProduct extends Component {
         </a>
         <ol className={sampleProductStyles.container}>
           {this.state.products.map(product => (
-            <a className={sampleProductStyles.flexbox} href="/">
-              {" "}
-              <li className={sampleProductStyles.list} key={product.id}>
-                <h2 className={sampleProductStyles.type}>{product.type}</h2>
-                <h4 className={sampleProductStyles.slogan}>{product.slogan}</h4>
-                <p>{product.color}</p>
-                <p>{product.price}</p>
-
-                <button className={sampleProductStyles.button}>
-                  <img alt="cart" src="cart.png" />
-                </button>
-              </li>
-            </a>
+            <li className={sampleProductStyles.flexbox} key={product.id}>
+              <h2 className={sampleProductStyles.type}>{product.type}</h2>
+              <h4 className={sampleProductStyles.slogan}>{product.slogan}</h4>
+              <p>{product.color}</p>
+              <p>{product.price}</p>
+              <button
+                className={sampleProductStyles.button}
+                value={product.id}
+                onClick={() => {
+                  this.handleClick(product.id);
+                  window.location = `#/products/${product.id}`;
+                }}
+              >
+                <img alt="cart" src="cart.png" />
+              </button>
+            </li>
           ))}
         </ol>
       </div>
