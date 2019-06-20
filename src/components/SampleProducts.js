@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import sampleProductStyles from "./sampleProduct.module.scss";
 
+import { getOneProduct } from "../actions/products";
+
 class SampleProduct extends Component {
   constructor() {
     super();
@@ -18,7 +20,7 @@ class SampleProduct extends Component {
   }
 
   handleClick = id => {
-    this.state.getProduct(id);
+    this.state.getOneProduct(id);
   };
 
   render() {
@@ -58,4 +60,20 @@ class SampleProduct extends Component {
   }
 }
 
-export default SampleProduct;
+function mapStateToProps(state) {
+  return {
+    events: state.home.selectedEventsByCategory
+  };
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    getEventsByCategory: category => dispatch(getEventsByCategory(category)),
+    getEvent: id => dispatch(getEvent(id))
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(EventsByCategory);
