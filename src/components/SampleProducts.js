@@ -6,15 +6,15 @@ class SampleProduct extends Component {
   constructor() {
     super();
     this.state = {
-      tshirts: []
+      products: []
     };
   }
 
   componentDidMount() {
-    fetch("/api/tshirts")
+    fetch("/api/v1/products")
       .then(res => res.json())
-      .then(tshirts =>
-        this.setState({ tshirts }, () => console.log("tshirts"))
+      .then(products =>
+        this.setState({ products }, () => console.log("products"))
       );
   }
   render() {
@@ -30,14 +30,14 @@ class SampleProduct extends Component {
           <h2 className={sampleProductStyles.secondTitle}>The Store</h2>
         </a>
         <ol className={sampleProductStyles.container}>
-          {this.state.tshirts.map(tshirt => (
+          {this.state.products.map(product => (
             <a className={sampleProductStyles.flexbox} href="/">
               {" "}
-              <li className={sampleProductStyles.list} key={tshirt.id}>
-                <h2 className={sampleProductStyles.type}>{tshirt.type}</h2>
-                <h4 className={sampleProductStyles.slogan}>{tshirt.slogan}</h4>
-                <p>{tshirt.color}</p>
-                <p>{tshirt.price}</p>
+              <li className={sampleProductStyles.list} key={product.id}>
+                <h2 className={sampleProductStyles.type}>{product.type}</h2>
+                <h4 className={sampleProductStyles.slogan}>{product.slogan}</h4>
+                <p>{product.color}</p>
+                <p>{product.price}</p>
 
                 <button className={sampleProductStyles.button}>
                   <img alt="cart" src="cart.png" />
