@@ -2,7 +2,7 @@
   text-align: center;
   font-size: 25px;
   padding-top: 5%;
-  color: #3eb650;
+  color: #f76c6c;
   text-transform: uppercase;
 }
 
@@ -12,7 +12,7 @@
   color: black;
   padding-top: 5%;
   text-transform: uppercase;
-  color: #3eb650;
+  color: #f76c6c;
 }
 
 a:link {
@@ -54,13 +54,6 @@ a:link {
   color: black;
 }
 
-.list:hover {
-  .type {
-    color: #3eb650;
-  }
-}
-
-.list,
 p {
   font-size: 17px;
   text-decoration-style: dashed;
@@ -68,4 +61,14 @@ p {
 
 .slogan {
   font-style: italic;
+}
+
+.button {
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 1px solid #f76c6c;
 }

@@ -54,7 +54,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <img src="logo.png" className={homeStyles.logo} />
+        <img alt="logo" src="logo.png" className={homeStyles.logo} />
         <hr />
         <div className={homeStyles.banner}>
           <h2 className={homeStyles.secondaryTitle}>The Problem</h2>

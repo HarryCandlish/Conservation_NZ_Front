@@ -39,7 +39,9 @@ class SampleProduct extends Component {
                 <p>{tshirt.color}</p>
                 <p>{tshirt.price}</p>
 
-                <button>Add</button>
+                <button className={sampleProductStyles.button}>
+                  <img alt="cart" src="cart.png" />
+                </button>
               </li>
             </a>
           ))}
