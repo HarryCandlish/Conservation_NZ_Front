@@ -30,9 +30,7 @@ class SampleProduct extends Component {
             To provide and spread awareness in the community
           </p>
         </div>
-        <a href="/">
-          <h2 className={sampleProductStyles.secondTitle}>The Store</h2>
-        </a>
+
         <ol className={sampleProductStyles.container}>
           {this.state.products.map(product => (
             <li className={sampleProductStyles.flexbox} key={product.id}>

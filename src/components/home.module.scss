@@ -11,7 +11,7 @@
 
 .epigraph {
   text-align: center;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-bottom: 3%;
   width: 75%;
   left: 12.5%;
@@ -20,14 +20,15 @@
 
 .secondaryTitle {
   text-align: center;
-  font-size: 25px;
-  padding-top: 100px;
-  color: #f76c6c;
+  font-size: 30px;
+  padding-top: 30px;
+  color: black;
   text-transform: uppercase;
 }
 
-hr {
+.banner {
+  width: 100%;
+  background-color: #f76c6c;
   position: relative;
-  top: 90px;
-  width: 75%;
+  top: 80px;
 }

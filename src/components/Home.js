@@ -55,7 +55,7 @@ class Home extends Component {
     return (
       <div>
         <img alt="logo" src="logo.png" className={homeStyles.logo} />
-        <hr />
+
         <div className={homeStyles.banner}>
           <h2 className={homeStyles.secondaryTitle}>The Problem</h2>
           <p className={homeStyles.epigraph}>
@@ -63,6 +63,7 @@ class Home extends Component {
             the mental health issues in Wellington and New Zealand
           </p>
         </div>
+
         <div>
           <Chart chartData={this.state.chartData} />
         </div>

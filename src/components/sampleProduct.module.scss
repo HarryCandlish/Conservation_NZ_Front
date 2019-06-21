@@ -1,18 +1,9 @@
 .title {
   text-align: center;
-  font-size: 25px;
-  padding-top: 5%;
-  color: #f76c6c;
-  text-transform: uppercase;
-}
+  font-size: 30px;
+  padding-top: 30px;
 
-.secondTitle {
-  text-align: center;
-  font-size: 25px;
-  color: black;
-  padding-top: 5%;
   text-transform: uppercase;
-  color: #f76c6c;
 }
 
 a:link {
@@ -21,8 +12,11 @@ a:link {
 
 .epigraph {
   text-align: center;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-bottom: 3%;
+  width: 75%;
+  left: 12.5%;
+  position: relative;
 }
 
 .container {
@@ -32,6 +26,7 @@ a:link {
   flex-wrap: wrap;
   justify-content: center;
   padding: 5px;
+  padding-top: 8%;
   margin: 0;
   position: relative;
 }
@@ -70,4 +65,11 @@ p {
 
 .button:hover {
   border: 1px solid #f76c6c;
+}
+
+.banner {
+  width: 100%;
+  background-color: #f76c6c;
+  position: relative;
+  top: 50px;
 }
