@@ -1,0 +1,48 @@
+.title {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+
+  text-transform: uppercase;
+}
+
+.epigraph {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  width: 75%;
+  left: 12.5%;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 8%;
+  margin: 0;
+  position: relative;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center space-between;
+  width: 25%;
+  border-radius: 1%;
+  margin: 5px;
+  height: 300px;
+  text-align: center;
+  border: 1px lightgray solid;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 17px;
+  text-decoration-style: dashed;
+}
