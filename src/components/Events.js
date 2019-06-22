@@ -17,7 +17,7 @@ class Events extends Component {
   }
 
   handleClick = (e, event) => {
-    console.log(e.target.value, event);
+    return (e.target.value = event);
   };
 
   render() {
