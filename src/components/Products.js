@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import sampleProductStyles from "./sampleProduct.module.scss";
+import productsStyles from "./products.module.scss";
 
-class SampleProduct extends Component {
+class Products extends Component {
   constructor() {
     super();
     this.state = {
@@ -24,18 +24,11 @@ class SampleProduct extends Component {
   render() {
     return (
       <div>
-        <div className={sampleProductStyles.banner}>
-          <h2 className={sampleProductStyles.title}>Our Philosophy</h2>
-          <p className={sampleProductStyles.epigraph}>
-            To provide and spread awareness in the community
-          </p>
-        </div>
-
-        <ol className={sampleProductStyles.container}>
+        <ol className={productsStyles.container}>
           {this.state.products.map(product => (
-            <li className={sampleProductStyles.flexbox} key={product.id}>
-              <h2 className={sampleProductStyles.type}>{product.type}</h2>
-              <h4 className={sampleProductStyles.slogan}>{product.slogan}</h4>
+            <li className={productsStyles.flexbox} key={product.id}>
+              <h2 className={productsStyles.type}>{product.type}</h2>
+              <h4 className={productsStyles.slogan}>{product.slogan}</h4>
               <p>{product.color}</p>
               <p>{product.price}</p>
               <button
@@ -55,4 +48,4 @@ class SampleProduct extends Component {
   }
 }
 
-export default SampleProduct;
+export default Products;
