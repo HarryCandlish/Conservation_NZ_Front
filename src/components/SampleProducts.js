@@ -17,15 +17,11 @@ class SampleProduct extends Component {
       );
   }
 
-  handleClick = id => {
-    this.state.getProduct(id);
-  };
-
   render() {
     return (
       <div>
         <div className={sampleProductStyles.banner}>
-          <h2 className={sampleProductStyles.title}>Our Mission</h2>
+          <h2 className={sampleProductStyles.title}>Our Philosophy</h2>
           <p className={sampleProductStyles.epigraph}>
             To provide and spread awareness in the community
           </p>
@@ -38,14 +34,7 @@ class SampleProduct extends Component {
               <h4 className={sampleProductStyles.slogan}>{product.slogan}</h4>
               <p>{product.color}</p>
               <p>{product.price}</p>
-              <button
-                className={sampleProductStyles.button}
-                value={product.id}
-                onClick={() => {
-                  this.handleClick(product.id);
-                  window.location = `#/products/${product.id}`;
-                }}
-              >
+              <button>
                 <img alt="cart" src="cart.png" />
               </button>
             </li>

@@ -9,11 +9,16 @@ class Events extends Component {
       events: []
     };
   }
+
   componentDidMount() {
     fetch("/api/events")
       .then(res => res.json())
       .then(events => this.setState({ events }, () => console.log("events")));
   }
+
+  handleClick = (e, event) => {
+    return (e.target.value = event);
+  };
 
   render() {
     return (
@@ -25,7 +30,15 @@ class Events extends Component {
             <li className={eventStyles.flexbox} key={event.id}>
               <h2 className={eventStyles.name}>{event.name}</h2>
               <p>{event.location}</p>
-              <p>{event.description}</p>
+              <button
+                value={event.id}
+                onClick={e => {
+                  this.handleClick(e, event);
+                  window.location = `#/events/${event.id}`;
+                }}
+              >
+                Event
+              </button>
             </li>
           ))}
         </ol>
