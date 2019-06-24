@@ -27,15 +27,18 @@ class sampleProduct extends Component {
             A clothing line that distributes clothing promoting mental health
             awareness
           </p>
-          <div className={sampleProductStyles.container}>
-            <ol>
-              {this.state.sampleProduct.map(sample => (
-                <li>
-                  <h1>{sample.title}</h1>
-                </li>
-              ))}
-            </ol>
-          </div>
+        </div>
+        <div className={sampleProductStyles.container}>
+          <ol>
+            {this.state.sampleProduct.map(sample => (
+              <li>
+                <h1>{sample.title}</h1>
+                <p>{sample.details}</p>
+                <p>{sample.description}</p>
+                <img alt="shirt" src={sample.image} />
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     );
