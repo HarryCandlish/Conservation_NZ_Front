@@ -3,6 +3,21 @@ import React, { Component } from "react";
 import sampleProductStyles from "./sampleProduct.module.scss";
 
 class sampleProduct extends Component {
+  constructor() {
+    super();
+    this.state = {
+      sampleProduct: []
+    };
+  }
+
+  componentDidMount() {
+    fetch("/api/sampleproduct")
+      .then(res => res.json())
+      .then(sampleProduct =>
+        this.setState({ sampleProduct }, () => console.log("sampleProduct"))
+      );
+  }
+
   render() {
     return (
       <div>
@@ -12,6 +27,15 @@ class sampleProduct extends Component {
             A clothing line that distributes clothing promoting mental health
             awareness
           </p>
+          <div className={sampleProductStyles.container}>
+            <ol>
+              {this.state.sampleProduct.map(sample => (
+                <li>
+                  <h1>{sample.title}</h1>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </div>
     );
