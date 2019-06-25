@@ -1,26 +1,45 @@
-import React from "react";
+import React, { Component } from "react";
 
 import navStyles from "./nav.module.scss";
 
-const Header = () => {
-  return (
-    <div>
-      <nav className={navStyles.nav}>
-        <ul>
-          <li>
-            <img alt="nav" className={navStyles.image} src="./logo.png" />
-            <ul>
-              <li>Stats</li>
-              <li>Events</li>
-              <li>News</li>
-              <li>Contact</li>
-              <li>Home &nbsp; &nbsp;</li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  );
-};
+class Nav extends Component {
+  render() {
+    return (
+      <div>
+        <nav>
+          <div>
+            <h4 className={navStyles.title}>All is Well.</h4>
+          </div>
+          <ul className={navStyles.navLinks}>
+            <a href="/">
+              <li>
+                <h4>Store</h4>
+              </li>
+            </a>
+            <a href="/">
+              <li>
+                {" "}
+                <h4>Events</h4>
+              </li>
+            </a>
 
-export default Header;
+            <a href="/">
+              <li>
+                {" "}
+                <h4>News</h4>
+              </li>
+            </a>
+            <a href="/">
+              <li>
+                {" "}
+                <h4>Home</h4>
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    );
+  }
+}
+
+export default Nav;
