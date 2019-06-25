@@ -9,9 +9,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #f76c6c;
+  background-color: #3cc47c;
 }
-
 
 .title {
   text-transform: uppercase;
@@ -23,6 +22,7 @@ nav {
   display: flex;
   width: 50%;
   justify-content: space-around;
+  letter-spacing: 3px;
 }
 
 a {
