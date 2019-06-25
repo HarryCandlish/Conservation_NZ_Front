@@ -27,6 +27,11 @@ class Philosophy extends Component {
         </div>
         <div className={philosophyStyles.container}>
           <div>
+            <ul>
+              {this.state.philosophy.map(philosophy => (
+                <li key={philosophy.id}>{philosophy.title}</li>
+              ))}
+            </ul>
             <img
               className={philosophyStyles.image}
               alt="woods"
