@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #f76c6c;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+
+.navLinks {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+a {
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+}
