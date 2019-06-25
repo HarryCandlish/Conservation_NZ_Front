@@ -12,6 +12,15 @@ class Philosophy extends Component {
             To provide and spread awareness in the community
           </p>
         </div>
+        <div className={philosophyStyles.container}>
+          <div>
+            <img
+              className={philosophyStyles.image}
+              alt="woods"
+              src="/background.jpg"
+            />
+          </div>
+        </div>
       </div>
     );
   }

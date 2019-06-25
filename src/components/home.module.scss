@@ -3,10 +3,13 @@
 }
 
 .title {
-  font-size: 60px;
+  font-size: 100px;
   text-align: center;
-  padding-top: 7%;
-  letter-spacing: 15px;
+  padding-top: 14%;
+  letter-spacing: 35px;
+  word-spacing: -20px;
+  padding-bottom: 10%;
+  margin: 0;
 }
 
 .epigraph {
@@ -28,7 +31,9 @@
 
 .banner {
   width: 100%;
-  background-color: #f76c6c;
+  background-color: #3cc47c;
   position: relative;
   top: 80px;
 }
+
+// #1e92a

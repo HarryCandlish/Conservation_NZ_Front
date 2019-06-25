@@ -20,7 +20,7 @@ class sampleProduct extends Component {
 
   render() {
     return (
-      <div>
+      <div className={sampleProductStyles.header}>
         <div className={sampleProductStyles.banner}>
           <h2 className={sampleProductStyles.title}>Our Product</h2>
           <p className={sampleProductStyles.epigraph}>
@@ -28,14 +28,17 @@ class sampleProduct extends Component {
             awareness
           </p>
         </div>
-        <div className={sampleProductStyles.container}>
-          <ol>
+        <div>
+          <ol className={sampleProductStyles.container}>
             {this.state.sampleProduct.map(sample => (
-              <li>
-                <h1>{sample.title}</h1>
+              <li key={sample.id}>
+                <h3>{sample.title}</h3>
                 <p>{sample.details}</p>
                 <p>{sample.description}</p>
                 <img alt="shirt" src={sample.image} />
+                <a href="/#/products">
+                  <h2>STORE</h2>
+                </a>
               </li>
             ))}
           </ol>

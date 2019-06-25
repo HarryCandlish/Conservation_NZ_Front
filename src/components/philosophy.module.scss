@@ -25,7 +25,7 @@ a:link {
   width: 98%;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 5px;
+
   padding-top: 8%;
   margin: 0;
   position: relative;
@@ -64,12 +64,28 @@ p {
 }
 
 .button:hover {
-  border: 1px solid #f76c6c;
+  border: 1px solid #3cc47c;
 }
 
 .banner {
   width: 100%;
-  background-color: #f76c6c;
+  background-color: #3cc47c;
+  padding: 0;
+  margin: 0;
   position: relative;
-  top: 50px;
+  top: 15.5px;
+}
+
+.container {
+  width: 100%;
+  height: 20%;
+  padding: 0;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  padding: 0;
+  margin: 0;
 }
