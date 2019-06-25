@@ -2,12 +2,7 @@
   text-align: center;
   font-size: 30px;
   padding-top: 30px;
-
   text-transform: uppercase;
-}
-
-a:link {
-  text-decoration: none;
 }
 
 .epigraph {
@@ -31,45 +26,20 @@ a:link {
   position: relative;
 }
 
-.flexbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center space-between;
-  width: 25%;
-  border-radius: 1%;
-  margin: 5px;
-  height: 300px;
-  text-align: center;
-  border: 1px lightgray solid;
-  list-style-type: none;
-  text-decoration: none;
-  color: black;
-}
-
-p {
-  font-size: 17px;
-  text-decoration-style: dashed;
-}
-
-.slogan {
-  font-style: italic;
-}
-
-.button {
-  width: 30%;
-  position: relative;
-  left: 35%;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-.button:hover {
-  border: 1px solid #f76c6c;
-}
-
 .banner {
   width: 100%;
-  background-color: #f76c6c;
+  background-color: #3cc47c;
   position: relative;
-  top: 50px;
+  top: -25px;
+  border-top: 1px white solid;
+}
+
+ol {
+  list-style: none;
+  text-align: center;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
 }

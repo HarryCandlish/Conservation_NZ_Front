@@ -24,7 +24,7 @@ class Products extends Component {
   render() {
     return (
       <div>
-        <h1 className={productsStyles.title}>Products</h1>
+        <h1 className={productsStyles.title} />
         <ol className={productsStyles.container}>
           {this.state.products.map(product => (
             <li className={productsStyles.flexbox} key={product.id}>

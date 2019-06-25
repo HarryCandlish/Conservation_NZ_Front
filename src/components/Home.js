@@ -3,7 +3,8 @@ import homeStyles from "./home.module.scss";
 
 import Chart from "./Chart";
 import ChartTwo from "./ChartTwo";
-import SampleProducts from "./SampleProducts";
+import Philosophy from "./Philosophy";
+import SampleProducts from "./SampleProduct";
 
 class Home extends Component {
   constructor() {
@@ -54,8 +55,12 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <img alt="logo" src="logo.png" className={homeStyles.logo} />
-
+        <h1 className={homeStyles.title}>
+          &nbsp;All <br />
+          &nbsp;is
+          <br />
+          &nbsp; Well.
+        </h1>
         <div className={homeStyles.banner}>
           <h2 className={homeStyles.secondaryTitle}>The Problem</h2>
           <p className={homeStyles.epigraph}>
@@ -71,6 +76,7 @@ class Home extends Component {
           <ChartTwo />
         </div>
         <div>
+          <Philosophy />
           <SampleProducts />
         </div>
       </div>
