@@ -3,6 +3,19 @@ import React, { Component } from "react";
 import philosophyStyles from "./philosophy.module.scss";
 
 class Philosophy extends Component {
+  constructor() {
+    super();
+    this.state = {
+      philosophy: []
+    };
+  }
+  componentDidMount() {
+    fetch("/api/philosophy")
+      .then(res => res.json())
+      .then(philosophy =>
+        this.setState({ philosophy }, () => console.log("philosophy"))
+      );
+  }
   render() {
     return (
       <div className={philosophyStyles.mainContainer}>
