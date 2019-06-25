@@ -5,7 +5,7 @@ import philosophyStyles from "./philosophy.module.scss";
 class Philosophy extends Component {
   render() {
     return (
-      <div>
+      <div className={philosophyStyles.mainContainer}>
         <div className={philosophyStyles.banner}>
           <h2 className={philosophyStyles.title}>Our Philosophy</h2>
           <p className={philosophyStyles.epigraph}>

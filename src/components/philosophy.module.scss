@@ -1,13 +1,13 @@
+.mainContainer {
+  padding-top: 3%;
+}
+
 .title {
   text-align: center;
   font-size: 30px;
   padding-top: 30px;
 
   text-transform: uppercase;
-}
-
-a:link {
-  text-decoration: none;
 }
 
 .epigraph {
@@ -36,11 +36,11 @@ a:link {
   flex-direction: column;
   justify-content: center space-between;
   width: 25%;
-  border-radius: 1%;
+
   margin: 5px;
   height: 300px;
   text-align: center;
-  border: 1px lightgray solid;
+
   list-style-type: none;
   text-decoration: none;
   color: black;
@@ -51,29 +51,15 @@ p {
   text-decoration-style: dashed;
 }
 
-.slogan {
-  font-style: italic;
-}
-
-.button {
-  width: 30%;
-  position: relative;
-  left: 35%;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-.button:hover {
-  border: 1px solid #3cc47c;
-}
-
 .banner {
   width: 100%;
   background-color: #3cc47c;
   padding: 0;
   margin: 0;
   position: relative;
-  top: 58.5px;
+  top: 58px;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
 }
 
 .container {
