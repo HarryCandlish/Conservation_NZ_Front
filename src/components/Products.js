@@ -32,6 +32,7 @@ class Products extends Component {
               <h4 className={productsStyles.slogan}>{product.slogan}</h4>
               <p>{product.color}</p>
               <p>{product.price}</p>
+
               <button
                 value={product.id}
                 onClick={e => {

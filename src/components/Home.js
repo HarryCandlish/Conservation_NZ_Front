@@ -26,26 +26,26 @@ class Home extends Component {
           {
             label: "Depression",
             data: [100, 157, 209, 250, 308],
-            backgroundColor: "#c38d9e",
+            backgroundColor: "black",
             pointBorderColor: "black",
             fill: false,
-            borderColor: "#c38d9e"
+            borderColor: "black"
           },
           {
             label: "Anxiety",
             data: [94, 123, 270, 309, 350],
-            backgroundColor: "#e8a87c",
+            backgroundColor: "#3cc47c",
             fill: false,
-            borderColor: "#e8a87c",
-            pointBorderColor: "black"
+            borderColor: "#3cc47c",
+            pointBorderColor: "#3cc47c"
           },
           {
             label: "Addiction",
             data: [80, 130, 201, 247, 304],
-            backgroundColor: "#41b3a3",
+            backgroundColor: "grey",
             fill: false,
-            borderColor: "#41b3a3",
-            pointBorderColor: "black"
+            borderColor: "grey",
+            pointBorderColor: "grey"
           }
         ]
       }

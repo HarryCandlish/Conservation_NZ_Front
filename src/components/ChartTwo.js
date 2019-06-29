@@ -14,18 +14,18 @@ class ChartTwo extends Component {
           {
             label: "Youth Suicide",
             data: [100, 157, 209, 250, 308],
-            backgroundColor: "#05386b",
+            backgroundColor: "black",
             pointBorderColor: "black",
             fill: false,
-            borderColor: "#05386b"
+            borderColor: "black"
           },
           {
             label: "Adult Suicide",
             data: [45, 120, 140, 200, 262],
-            backgroundColor: "#5cdb96",
-            pointBorderColor: "black",
+            backgroundColor: "#3cc47c",
+            pointBorderColor: "#3cc47c",
             fill: false,
-            borderColor: "#5cdb96"
+            borderColor: "#3cc47c"
           }
         ]
       },

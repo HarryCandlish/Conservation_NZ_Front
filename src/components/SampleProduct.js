@@ -34,18 +34,6 @@ class sampleProduct extends Component {
             <h1 className={sampleProductStyles.store}>Store</h1>
           </a>
         </div>
-        <div>
-          <ol className={sampleProductStyles.container}>
-            {this.state.sampleProduct.map(sample => (
-              <li key={sample.id}>
-                <h3>{sample.title}</h3>
-                <p>{sample.details}</p>
-                <p>{sample.description}</p>
-                <img alt="shirt" src={sample.image} />
-              </li>
-            ))}
-          </ol>
-        </div>
       </div>
     );
   }
