@@ -21,6 +21,12 @@ class Philosophy extends Component {
       <div className={philosophyStyles.mainContainer}>
         <div className={philosophyStyles.banner}>
           <h2 className={philosophyStyles.title}>Our Philosophy</h2>
+          <p className={philosophyStyles.epigraph}>
+            We believe that every company, to continue to move forward, must
+            have a philosophy. Our philosophy promotes the dignity and courage
+            it takes to fight mental illness. It's the belief that life will be
+            better and that this is a fight we are able to win.
+          </p>
         </div>
         <div className={philosophyStyles.containerTwo}>
           <ul className={philosophyStyles.container}>

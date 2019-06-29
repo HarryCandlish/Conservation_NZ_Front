@@ -25,7 +25,10 @@ class sampleProduct extends Component {
           <h2 className={sampleProductStyles.title}>Our Product</h2>
           <p className={sampleProductStyles.epigraph}>
             A clothing line that distributes clothing promoting mental health
-            awareness, check out our store.
+            awareness, check out our store. Everything in our store is produced
+            locally. The Shirts are made with reused fabric and are
+            environmentally friendly. On each item of clothing there appears our
+            slogan promoting well-being and the conception of overcoming.
           </p>
           <a href="/">
             <h1 className={sampleProductStyles.store}>Store</h1>
