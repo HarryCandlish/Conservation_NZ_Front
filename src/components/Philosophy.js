@@ -21,23 +21,22 @@ class Philosophy extends Component {
       <div className={philosophyStyles.mainContainer}>
         <div className={philosophyStyles.banner}>
           <h2 className={philosophyStyles.title}>Our Philosophy</h2>
-          <p className={philosophyStyles.epigraph}>
-            To provide and spread awareness in the community
-          </p>
         </div>
-        <div className={philosophyStyles.container}>
-          <div>
-            <ul>
-              {this.state.philosophy.map(philosophy => (
-                <li key={philosophy.id}>{philosophy.title}</li>
-              ))}
-            </ul>
-            <img
-              className={philosophyStyles.image}
-              alt="woods"
-              src="/background.jpg"
-            />
-          </div>
+        <div className={philosophyStyles.containerTwo}>
+          <ul className={philosophyStyles.container}>
+            {this.state.philosophy.map(philosophy => (
+              <li className={philosophyStyles.flexbox} key={philosophy.id}>
+                <div className={philosophyStyles.titleDiv}>
+                  <h2 className={philosophyStyles.flexTitle}>
+                    {philosophy.title}
+                  </h2>
+                </div>
+                <p className={philosophyStyles.flexPara}>
+                  {philosophy.description}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     );

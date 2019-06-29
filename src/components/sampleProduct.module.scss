@@ -1,8 +1,9 @@
 .title {
   text-align: center;
-  font-size: 30px;
-  padding-top: 30px;
+  font-size: 35px;
+  padding-top: 100px;
   text-transform: uppercase;
+  color: white;
 }
 
 .epigraph {
@@ -12,6 +13,7 @@
   width: 75%;
   left: 12.5%;
   position: relative;
+  color: white;
 }
 
 .container {
@@ -31,8 +33,7 @@
   background-color: #3cc47c;
   position: relative;
   top: 62px;
-  border-top: 1px black solid;
-  border-bottom: 1px black solid;
+  height: 300px;
 }
 
 ol {

@@ -8,15 +8,15 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 12vh;
   background-color: #3cc47c;
-  border-bottom: 1px black solid;
 }
 
 .title {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 22px;
+  color: white;
 }
 
 .navLinks {
@@ -27,9 +27,13 @@ nav {
 }
 
 a {
-  color: black;
   text-transform: uppercase;
   font-size: 14px;
+  color: white;
+}
+
+a:hover {
+  color: black;
 }
 
 li {
