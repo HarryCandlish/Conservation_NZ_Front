@@ -6,7 +6,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Events from "./components/Events";
-import Products from "./components/Products";
+import Store from "./components/Store";
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
         <Router>
           <Route exact path="/" component={Home} />
           <Route exact path="/events" component={Events} />
-          <Route exact path="/products" component={Products} />
+          <Route exact path="/store" component={Store} />
         </Router>
       </div>
     );
