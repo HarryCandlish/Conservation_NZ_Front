@@ -25,8 +25,11 @@ class sampleProduct extends Component {
           <h2 className={sampleProductStyles.title}>Our Product</h2>
           <p className={sampleProductStyles.epigraph}>
             A clothing line that distributes clothing promoting mental health
-            awareness
+            awareness, check out our store.
           </p>
+          <a href="/">
+            <h1 className={sampleProductStyles.store}>Store</h1>
+          </a>
         </div>
         <div>
           <ol className={sampleProductStyles.container}>
@@ -36,9 +39,6 @@ class sampleProduct extends Component {
                 <p>{sample.details}</p>
                 <p>{sample.description}</p>
                 <img alt="shirt" src={sample.image} />
-                <a href="/#/products">
-                  <h2>STORE</h2>
-                </a>
               </li>
             ))}
           </ol>

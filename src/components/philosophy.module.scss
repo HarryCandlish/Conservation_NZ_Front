@@ -1,11 +1,11 @@
 .mainContainer {
-  padding-top: 3%;
+  padding-top: -20%;
 }
 
 .title {
   text-align: center;
   font-size: 35px;
-  padding-top: 100px;
+  padding-top: 80px;
   color: white;
   text-transform: uppercase;
 }
@@ -26,7 +26,7 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 8%;
+  top: -20px;
   margin: 0;
   position: relative;
 }
@@ -62,7 +62,7 @@ p {
   height: 225px;
   background-color: #3cc47c;
   position: relative;
-  top: 80px;
+  top: 30px;
 }
 
 .container {
@@ -81,9 +81,9 @@ h3 {
 
 .flexPara {
   padding-top: 50px;
-  width: 60%;
+  width: 50%;
   position: relative;
-  left: 20%;
+  left: 25%;
   letter-spacing: 2px;
   word-spacing: 2px;
 }

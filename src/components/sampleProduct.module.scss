@@ -14,6 +14,8 @@
   left: 12.5%;
   position: relative;
   color: white;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
 .container {
@@ -44,4 +46,17 @@ ol {
 .header {
   padding: 0;
   margin: 0;
+}
+
+.store {
+  text-align: center;
+  text-transform: uppercase;
+
+  color: black;
+  text-decoration: underline;
+}
+
+.store:hover {
+  color: white;
+  text-decoration: underline;
 }
