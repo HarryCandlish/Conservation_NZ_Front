@@ -49,7 +49,7 @@ a:link {
   margin-bottom: 250px;
 }
 
-p {
+.storePara {
   font-size: 17px;
   text-decoration-style: dashed;
   color: white;
@@ -68,7 +68,7 @@ p {
 }
 
 .image {
-  width: 100%;
+  width: 100.5%;
   height: 300px;
 }
 
@@ -85,6 +85,8 @@ p {
 
 button {
   cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
 }
 
 button:hover {

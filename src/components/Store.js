@@ -29,8 +29,8 @@ class Store extends Component {
               <div className={storeStyles.titleBox}>
                 <h2 className={storeStyles.type}>{store.type}</h2>
                 <h4 className={storeStyles.slogan}>{store.slogan}</h4>
-                <p>{store.color}</p>
-                <p>{store.price}</p>
+                <p className={storeStyles.storePara}>{store.color}</p>
+                <p className={storeStyles.storePara}>{store.price}</p>
               </div>
 
               <img
