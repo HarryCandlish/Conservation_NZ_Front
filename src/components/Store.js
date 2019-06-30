@@ -26,11 +26,19 @@ class Store extends Component {
         <ol className={storeStyles.container}>
           {this.state.store.map(store => (
             <li className={storeStyles.flexbox} key={store.id}>
-              <h2 className={storeStyles.type}>{store.type}</h2>
-              <h4 className={storeStyles.slogan}>{store.slogan}</h4>
-              <p>{store.color}</p>
-              <p>{store.price}</p>
-              <img alt="shirt" src={store.image} />
+              <div className={storeStyles.titleBox}>
+                <h2 className={storeStyles.type}>{store.type}</h2>
+                <h4 className={storeStyles.slogan}>{store.slogan}</h4>
+                <p>{store.color}</p>
+                <p>{store.price}</p>
+              </div>
+
+              <img
+                className={storeStyles.image}
+                alt="shirt"
+                src="./tshirt.jpg"
+              />
+
               <button
                 value={store.id}
                 onClick={e => {
